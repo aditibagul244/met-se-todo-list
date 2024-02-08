@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+         crossorigin="anonymous" 
+         referrerpolicy="no-referrer" />
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Index Page</title>
+</head>
+<body>
+    <section class="background">
+        <section class="bgimage">
+            <img src="./IMAGES/sergei-a--.jpg">
+        </section>
+        <section class="btn"><button id="add">Add todo</button></section>
+        <section class="word">T O D O</section>
+        <section class="blog">
+            <ul class="list">
+                <li>
+                    <p>Complete HTML Learning</p>
+                    <div id="medium">!!</div>
+                    Learn all HTML semantic tags,learn new article tag.
+                    <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+
+                </li>
+                <li>
+                   <p>Learn map() method</p>
+                   <div id="high">!!!</div>
+                    Learn how to implement map method in javascript.
+                    <button class="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                </li>
+                <li>
+                    <p>Take notes</p>
+                    <div id="medium">!!</div>
+                    Take notes regrading csss fundamentals.
+                    <button class="delete"><i class="fa fa-trash" id="take" aria-hidden="true"></i></button>
+                </li>
+                <li>
+                    <p>Water plants</p>
+                    <div id="low">!</div>
+                    Water all plants in graden
+                    <button class="delete"><i class="fa fa-trash" id="palnt" aria-hidden="true"></i></button>
+                </li>
+            </ul>
+            
+    </section>
+   
+ <section class="background2 d-none">
+        <section class="popup ">
+            <label>Todo Name</label>
+            <input type="text" id="todoname">
+            <label>Description</label>
+            <textarea id="desc"></textarea>
+            <label>Priority</label>
+           <select id="option">
+            <option></option>
+            <option value="high"> <div id="high">!!!</div></option>
+            <option value="medium"><div id="medium">!!</div></option>
+            <option value="low"><div id="low">!</div></option>
+           </select>
+           <button type="button" class="save">Save</button>
+           
+    </section>
+
+</section>
+<script src="./JS/index.js"></script>
+</body>
+</html>
